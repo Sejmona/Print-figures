@@ -47,22 +47,6 @@ def print_shape(choice, size):
                 else:
                     print(' ', end='')
             print()
-    elif choice == 'h':
-        for i in range(size):
-            for j in range(size):
-                if i <= size // 2 and j >= i and j <= size - i - 1:
-                    print('*', end='')
-                else:
-                    print(' ', end='')
-            print()
-    elif choice == 'h':
-        for i in range(size):
-            for j in range(size):
-                if i <= size // 2 and j >= i and j <= size - i - 1:
-                    print('*', end='')
-                else:
-                    print(' ', end='')
-            print()
     elif choice == 'g':
         for i in range(size):
             for j in range(size):
@@ -70,6 +54,30 @@ def print_shape(choice, size):
                     print('*', end='')
                 else:
                     print(' ', end='')
+    elif choice == 'h':
+        for i in range(size):
+            for j in range(size):
+                if i <= size // 2 and j >= i and j <= size - i - 1:
+                    print('*', end='')
+                else:
+                    print(' ', end='')
+            print()
+    elif choice == 'i':
+        for i in range(size):
+            for j in range(size):
+                if j <= i and j >= size - i - 1:
+                    print('*', end='')
+                else:
+                    print(' ', end='')
+            print()
+    elif choice == 'j':
+        for i in range(size):
+            for j in range(size):
+                if j >= i and j <= size - i - 1:
+                    print('*', end='')
+                else:
+                    print(' ', end='')
+            print()
     else:
         print("Invalid choice")
 
