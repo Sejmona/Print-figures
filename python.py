@@ -39,6 +39,14 @@ def print_shape(choice, size):
                 else:
                     print(' ', end='')
             print()
+    elif choice == 'f':
+        for i in range(size):
+            for j in range(size):
+                if i + j <= size - 1 or i >= j:
+                    print('*', end='')
+                else:
+                    print(' ', end='')
+            print()
     else:
         print("Invalid choice")
 
