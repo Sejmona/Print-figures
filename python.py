@@ -8,7 +8,14 @@ def print_shape(choice, size):
                 else:
                     print(' ', end='')
             print()
- 
+    elif choice == 'b':
+        for i in range(size):
+            for j in range(size):
+                if i <= j:
+                    print('*', end='')
+                else:
+                    print(' ', end='')
+            print() 
     else:
         print("Invalid choice")
 
